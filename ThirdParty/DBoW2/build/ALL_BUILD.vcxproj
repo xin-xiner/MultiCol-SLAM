@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{B91B1A60-FE02-4D6A-B557-993331504D2B}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\programPlugs\OpenCV3\opencv\build\include;F:\programPlugs\OpenCV3\opencv\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\programPlugs\OpenCV3\opencv\build\include;F:\programPlugs\OpenCV3\opencv\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\programPlugs\OpenCV3\opencv\build\include;F:\programPlugs\OpenCV3\opencv\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\programPlugs\OpenCV3\opencv\build\include;F:\programPlugs\OpenCV3\opencv\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\MultiCol-SLAM-master\ThirdParty\DBoW2\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/MultiCol-SLAM-master/ThirdParty/DBoW2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+F:\programPlugs\CMake\bin\cmake.exe -HE:/MultiCol-SLAM-master/ThirdParty/DBoW2 -BE:/MultiCol-SLAM-master/ThirdParty/DBoW2/build --check-stamp-file E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/MultiCol-SLAM-master/ThirdParty/DBoW2/CMakeLists.txt;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\CMakeLists.txt;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\3.1.3\CMakeSystem.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\3.1.3\CMakeCCompiler.cmake;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\3.1.3\CMakeCXXCompiler.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\3.1.3\CMakeRCCompiler.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;F:\programPlugs\OpenCV3\opencv\build\OpenCVConfig-version.cmake;F:\programPlugs\OpenCV3\opencv\build\OpenCVConfig.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVConfig.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules-debug.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules-release.cmake;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/MultiCol-SLAM-master/ThirdParty/DBoW2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+F:\programPlugs\CMake\bin\cmake.exe -HE:/MultiCol-SLAM-master/ThirdParty/DBoW2 -BE:/MultiCol-SLAM-master/ThirdParty/DBoW2/build --check-stamp-file E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/MultiCol-SLAM-master/ThirdParty/DBoW2/CMakeLists.txt;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\CMakeLists.txt;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\3.1.3\CMakeSystem.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\3.1.3\CMakeCCompiler.cmake;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\3.1.3\CMakeCXXCompiler.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\3.1.3\CMakeRCCompiler.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;F:\programPlugs\OpenCV3\opencv\build\OpenCVConfig-version.cmake;F:\programPlugs\OpenCV3\opencv\build\OpenCVConfig.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVConfig.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules-debug.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules-release.cmake;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/MultiCol-SLAM-master/ThirdParty/DBoW2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+F:\programPlugs\CMake\bin\cmake.exe -HE:/MultiCol-SLAM-master/ThirdParty/DBoW2 -BE:/MultiCol-SLAM-master/ThirdParty/DBoW2/build --check-stamp-file E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/MultiCol-SLAM-master/ThirdParty/DBoW2/CMakeLists.txt;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\CMakeLists.txt;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\3.1.3\CMakeSystem.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\3.1.3\CMakeCCompiler.cmake;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\3.1.3\CMakeCXXCompiler.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\3.1.3\CMakeRCCompiler.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;F:\programPlugs\OpenCV3\opencv\build\OpenCVConfig-version.cmake;F:\programPlugs\OpenCV3\opencv\build\OpenCVConfig.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVConfig.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules-debug.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules-release.cmake;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/MultiCol-SLAM-master/ThirdParty/DBoW2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+F:\programPlugs\CMake\bin\cmake.exe -HE:/MultiCol-SLAM-master/ThirdParty/DBoW2 -BE:/MultiCol-SLAM-master/ThirdParty/DBoW2/build --check-stamp-file E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/MultiCol-SLAM-master/ThirdParty/DBoW2/CMakeLists.txt;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\CMakeLists.txt;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\3.1.3\CMakeSystem.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\3.1.3\CMakeCCompiler.cmake;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\3.1.3\CMakeCXXCompiler.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\3.1.3\CMakeRCCompiler.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;F:\programPlugs\OpenCV3\opencv\build\OpenCVConfig-version.cmake;F:\programPlugs\OpenCV3\opencv\build\OpenCVConfig.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVConfig.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules-debug.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules-release.cmake;E:\MultiCol-SLAM-master\ThirdParty\DBoW2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\MultiCol-SLAM-master\ThirdParty\DBoW2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:/MultiCol-SLAM-master/ThirdParty/DBoW2/build/DBoW2.vcxproj">
+      <Project>60DF8EC6-7F4B-4F23-9E35-53059D3CFA9A</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/MultiCol-SLAM-master/ThirdParty/DBoW2/build/ZERO_CHECK.vcxproj">
+      <Project>C43192EB-2AC8-406F-87C9-D7F0ED4BE37F</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

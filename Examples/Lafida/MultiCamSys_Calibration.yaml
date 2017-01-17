@@ -1,0 +1,34 @@
+%YAML:1.0
+
+# Multi-camera calibration matrices (M_c)
+# rotation elements are in cayley parametrization
+CameraSystem.nrCams: 4                    
+# camera front
+CameraSystem.cam1_1: -2.146287684131544   #r1
+CameraSystem.cam1_2: 0.06476318741628837     #r2
+CameraSystem.cam1_3: -0.07176754899948741     #r3
+CameraSystem.cam1_4: 2.436739921569824    #t1
+CameraSystem.cam1_5: 6.082670211791992    #t2
+CameraSystem.cam1_6: 0.63904297351   #t3
+# camera right    
+CameraSystem.cam2_1: -2.185062   #r1
+CameraSystem.cam2_2: 1.947341911    #r2
+CameraSystem.cam2_3: -0.96258526   #r3
+CameraSystem.cam2_4: 3.3231899738     #t1
+CameraSystem.cam2_5: 4.339449882   #t2
+CameraSystem.cam2_6: 1.024880051    #t3
+# camera left    
+CameraSystem.cam3_1: -2.16542403   #r1
+CameraSystem.cam3_2: -1.96186848    #r2
+CameraSystem.cam3_3: 1.02343648   #r3
+CameraSystem.cam3_4: 1.4061800241    #t1
+CameraSystem.cam3_5: 4.45920991848    #t2
+CameraSystem.cam3_6: 1.0105899572    #t3
+# camera back
+CameraSystem.cam4_1: -0.46353742   #r1
+CameraSystem.cam4_2: -41.98523802   #r2
+CameraSystem.cam4_3: 16.84422212    #r3
+CameraSystem.cam4_4: 2.306809902    #t1
+CameraSystem.cam4_5: 1.6566200256    #t2
+CameraSystem.cam4_6: 1.07404005527   #t3
+

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{1B574C5D-CEB9-497D-9AEF-0AAE8CBC411E}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>MultiCol-SLAM</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="F:\programPlugs\OpenCV3\OpenCV3.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\MultiCol-SLAM-master\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MultiCol-SLAM.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MultiCol-SLAM</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\MultiCol-SLAM-master\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MultiCol-SLAM.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MultiCol-SLAM</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\MultiCol-SLAM-master\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MultiCol-SLAM.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MultiCol-SLAM</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\MultiCol-SLAM-master\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MultiCol-SLAM.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MultiCol-SLAM</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\MultiCol-SLAM-master\ThirdParty\OpenGV\include;E:\MultiCol-SLAM-master\ThirdParty\g2o;E:\MultiCol-SLAM-master\ThirdParty\Eigen;E:\MultiCol-SLAM-master;E:\MultiCol-SLAM-master\include;E:\MultiCol-SLAM-master\ThirdParty;E:\Pangolin-master\include;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\include;F:\programPlugs\boost_1_60_0\include\boost-1_60;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\external\glew\include;F:\programPlugs\Eigen\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MultiCol-SLAM-master\ThirdParty\OpenGV\include;E:\MultiCol-SLAM-master\ThirdParty\g2o;E:\MultiCol-SLAM-master\ThirdParty\Eigen;E:\MultiCol-SLAM-master;E:\MultiCol-SLAM-master\include;E:\MultiCol-SLAM-master\ThirdParty;E:\Pangolin-master\include;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\include;F:\programPlugs\boost_1_60_0\include\boost-1_60;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\external\glew\include;F:\programPlugs\Eigen\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MultiCol-SLAM-master\ThirdParty\OpenGV\include;E:\MultiCol-SLAM-master\ThirdParty\g2o;E:\MultiCol-SLAM-master\ThirdParty\Eigen;E:\MultiCol-SLAM-master;E:\MultiCol-SLAM-master\include;E:\MultiCol-SLAM-master\ThirdParty;E:\Pangolin-master\include;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\include;F:\programPlugs\boost_1_60_0\include\boost-1_60;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\external\glew\include;F:\programPlugs\Eigen\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\MultiCol-SLAM-master\ThirdParty\OpenGV\include;E:\MultiCol-SLAM-master\ThirdParty\g2o;E:\MultiCol-SLAM-master\ThirdParty\Eigen;E:\MultiCol-SLAM-master;E:\MultiCol-SLAM-master\include;E:\MultiCol-SLAM-master\ThirdParty;E:\Pangolin-master\include;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\include;F:\programPlugs\boost_1_60_0\include\boost-1_60;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\external\glew\include;F:\programPlugs\Eigen\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MultiCol-SLAM-master\ThirdParty\OpenGV\include;E:\MultiCol-SLAM-master\ThirdParty\g2o;E:\MultiCol-SLAM-master\ThirdParty\Eigen;E:\MultiCol-SLAM-master;E:\MultiCol-SLAM-master\include;E:\MultiCol-SLAM-master\ThirdParty;E:\Pangolin-master\include;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\include;F:\programPlugs\boost_1_60_0\include\boost-1_60;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\external\glew\include;F:\programPlugs\Eigen\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MultiCol-SLAM-master\ThirdParty\OpenGV\include;E:\MultiCol-SLAM-master\ThirdParty\g2o;E:\MultiCol-SLAM-master\ThirdParty\Eigen;E:\MultiCol-SLAM-master;E:\MultiCol-SLAM-master\include;E:\MultiCol-SLAM-master\ThirdParty;E:\Pangolin-master\include;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\include;F:\programPlugs\boost_1_60_0\include\boost-1_60;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\external\glew\include;F:\programPlugs\Eigen\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\MultiCol-SLAM-master\ThirdParty\OpenGV\include;E:\MultiCol-SLAM-master\ThirdParty\g2o;E:\MultiCol-SLAM-master\ThirdParty\Eigen;E:\MultiCol-SLAM-master;E:\MultiCol-SLAM-master\include;E:\MultiCol-SLAM-master\ThirdParty;E:\Pangolin-master\include;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\include;F:\programPlugs\boost_1_60_0\include\boost-1_60;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\external\glew\include;F:\programPlugs\Eigen\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MultiCol-SLAM-master\ThirdParty\OpenGV\include;E:\MultiCol-SLAM-master\ThirdParty\g2o;E:\MultiCol-SLAM-master\ThirdParty\Eigen;E:\MultiCol-SLAM-master;E:\MultiCol-SLAM-master\include;E:\MultiCol-SLAM-master\ThirdParty;E:\Pangolin-master\include;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\include;F:\programPlugs\boost_1_60_0\include\boost-1_60;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\external\glew\include;F:\programPlugs\Eigen\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MultiCol-SLAM-master\ThirdParty\OpenGV\include;E:\MultiCol-SLAM-master\ThirdParty\g2o;E:\MultiCol-SLAM-master\ThirdParty\Eigen;E:\MultiCol-SLAM-master;E:\MultiCol-SLAM-master\include;E:\MultiCol-SLAM-master\ThirdParty;E:\Pangolin-master\include;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\include;F:\programPlugs\boost_1_60_0\include\boost-1_60;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\external\glew\include;F:\programPlugs\Eigen\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\MultiCol-SLAM-master\ThirdParty\OpenGV\include;E:\MultiCol-SLAM-master\ThirdParty\g2o;E:\MultiCol-SLAM-master\ThirdParty\Eigen;E:\MultiCol-SLAM-master;E:\MultiCol-SLAM-master\include;E:\MultiCol-SLAM-master\ThirdParty;E:\Pangolin-master\include;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\include;F:\programPlugs\boost_1_60_0\include\boost-1_60;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\external\glew\include;F:\programPlugs\Eigen\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MultiCol-SLAM-master\ThirdParty\OpenGV\include;E:\MultiCol-SLAM-master\ThirdParty\g2o;E:\MultiCol-SLAM-master\ThirdParty\Eigen;E:\MultiCol-SLAM-master;E:\MultiCol-SLAM-master\include;E:\MultiCol-SLAM-master\ThirdParty;E:\Pangolin-master\include;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\include;F:\programPlugs\boost_1_60_0\include\boost-1_60;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\external\glew\include;F:\programPlugs\Eigen\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MultiCol-SLAM-master\ThirdParty\OpenGV\include;E:\MultiCol-SLAM-master\ThirdParty\g2o;E:\MultiCol-SLAM-master\ThirdParty\Eigen;E:\MultiCol-SLAM-master;E:\MultiCol-SLAM-master\include;E:\MultiCol-SLAM-master\ThirdParty;E:\Pangolin-master\include;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\include;F:\programPlugs\boost_1_60_0\include\boost-1_60;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\external\glew\include;F:\programPlugs\Eigen\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\MultiCol-SLAM-master\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/MultiCol-SLAM-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+F:\programPlugs\CMake\bin\cmake.exe -HE:/MultiCol-SLAM-master -BE:/MultiCol-SLAM-master/build --check-stamp-file E:\MultiCol-SLAM-master\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/MultiCol-SLAM-master/CMakeLists.txt;E:\MultiCol-SLAM-master\CMakeLists.txt;E:\MultiCol-SLAM-master\build\CMakeFiles\3.1.3\CMakeSystem.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;E:\MultiCol-SLAM-master\build\CMakeFiles\3.1.3\CMakeCCompiler.cmake;E:\MultiCol-SLAM-master\build\CMakeFiles\3.1.3\CMakeCXXCompiler.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;E:\MultiCol-SLAM-master\build\CMakeFiles\3.1.3\CMakeRCCompiler.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;F:\programPlugs\OpenCV3\opencv\build\OpenCVConfig-version.cmake;F:\programPlugs\OpenCV3\opencv\build\OpenCVConfig.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVConfig.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules-debug.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules-release.cmake;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\PangolinConfigVersion.cmake;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\PangolinConfig.cmake;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\PangolinTargets.cmake;E:\MultiCol-SLAM-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\MultiCol-SLAM-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/MultiCol-SLAM-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+F:\programPlugs\CMake\bin\cmake.exe -HE:/MultiCol-SLAM-master -BE:/MultiCol-SLAM-master/build --check-stamp-file E:\MultiCol-SLAM-master\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/MultiCol-SLAM-master/CMakeLists.txt;E:\MultiCol-SLAM-master\CMakeLists.txt;E:\MultiCol-SLAM-master\build\CMakeFiles\3.1.3\CMakeSystem.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;E:\MultiCol-SLAM-master\build\CMakeFiles\3.1.3\CMakeCCompiler.cmake;E:\MultiCol-SLAM-master\build\CMakeFiles\3.1.3\CMakeCXXCompiler.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;E:\MultiCol-SLAM-master\build\CMakeFiles\3.1.3\CMakeRCCompiler.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;F:\programPlugs\OpenCV3\opencv\build\OpenCVConfig-version.cmake;F:\programPlugs\OpenCV3\opencv\build\OpenCVConfig.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVConfig.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules-debug.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules-release.cmake;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\PangolinConfigVersion.cmake;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\PangolinConfig.cmake;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\PangolinTargets.cmake;E:\MultiCol-SLAM-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\MultiCol-SLAM-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/MultiCol-SLAM-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+F:\programPlugs\CMake\bin\cmake.exe -HE:/MultiCol-SLAM-master -BE:/MultiCol-SLAM-master/build --check-stamp-file E:\MultiCol-SLAM-master\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/MultiCol-SLAM-master/CMakeLists.txt;E:\MultiCol-SLAM-master\CMakeLists.txt;E:\MultiCol-SLAM-master\build\CMakeFiles\3.1.3\CMakeSystem.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;E:\MultiCol-SLAM-master\build\CMakeFiles\3.1.3\CMakeCCompiler.cmake;E:\MultiCol-SLAM-master\build\CMakeFiles\3.1.3\CMakeCXXCompiler.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;E:\MultiCol-SLAM-master\build\CMakeFiles\3.1.3\CMakeRCCompiler.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;F:\programPlugs\OpenCV3\opencv\build\OpenCVConfig-version.cmake;F:\programPlugs\OpenCV3\opencv\build\OpenCVConfig.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVConfig.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules-debug.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules-release.cmake;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\PangolinConfigVersion.cmake;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\PangolinConfig.cmake;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\PangolinTargets.cmake;E:\MultiCol-SLAM-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\MultiCol-SLAM-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/MultiCol-SLAM-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+F:\programPlugs\CMake\bin\cmake.exe -HE:/MultiCol-SLAM-master -BE:/MultiCol-SLAM-master/build --check-stamp-file E:\MultiCol-SLAM-master\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/MultiCol-SLAM-master/CMakeLists.txt;E:\MultiCol-SLAM-master\CMakeLists.txt;E:\MultiCol-SLAM-master\build\CMakeFiles\3.1.3\CMakeSystem.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;E:\MultiCol-SLAM-master\build\CMakeFiles\3.1.3\CMakeCCompiler.cmake;E:\MultiCol-SLAM-master\build\CMakeFiles\3.1.3\CMakeCXXCompiler.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;E:\MultiCol-SLAM-master\build\CMakeFiles\3.1.3\CMakeRCCompiler.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;F:\programPlugs\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;F:\programPlugs\OpenCV3\opencv\build\OpenCVConfig-version.cmake;F:\programPlugs\OpenCV3\opencv\build\OpenCVConfig.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVConfig.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules-debug.cmake;F:\programPlugs\OpenCV3\opencv\build\x86\vc12\lib\OpenCVModules-release.cmake;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\PangolinConfigVersion.cmake;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\PangolinConfig.cmake;E:\ORB_SLAM2-master\Thirdparty\Pangolin\build\src\PangolinTargets.cmake;E:\MultiCol-SLAM-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\MultiCol-SLAM-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cam_model_omni.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cam_system_omni.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cConverter.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cMultiFrame.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cMultiFramePublisher.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cMultiKeyFrame.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cMapPoint.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cMap.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cMapPublisher.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cLocalMapping.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cLoopClosing.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cOptimizer.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cORBVocabulary.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cORBmatcher.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cMultiKeyFrameDatabase.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cSim3Solver.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cSystem.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cTracking.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cMultiInitializer.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\cViewer.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\mdBRIEFextractorOct.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\misc.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\g2o_MultiCol_vertices_edges.h" />
+    <ClInclude Include="E:\MultiCol-SLAM-master\include\g2o_MultiCol_sim3_expmap.h" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cam_model_omni.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cam_system_omni.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cConverter.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cMultiFrame.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cMultiFramePublisher.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cMultiKeyFrame.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cMapPoint.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cMap.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cMapPublisher.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cOptimizer.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cOptimizerLoopStuff.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cMultiKeyFrameDatabase.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cSim3Solver.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cSystem.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cMultiInitializer.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\mdBRIEFextractorOct.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cTracking.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cLocalMapping.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cLoopClosing.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cViewer.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\cORBmatcher.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\g2o_MultiCol_sim3_expmap.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\g2o_MultiCol_vertices_edges.cpp" />
+    <ClCompile Include="E:\MultiCol-SLAM-master\src\misc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:/MultiCol-SLAM-master/build/ZERO_CHECK.vcxproj">
+      <Project>D1181034-A67E-4BA0-840D-1AF8FDB1ED0E</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
